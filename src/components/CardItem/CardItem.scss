@@ -1,0 +1,104 @@
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 8px;
+  border: 1px solid $color-elements;
+  background-color: $color-white;
+
+  &__image {
+    align-self: center;
+    object-fit: contain;
+    display: block;
+    width: 196px;
+    height: 208px;
+    margin: 0 auto;
+
+    @include onTablet {
+      width: 173px;
+      height: 202px;
+    }
+
+    @include onMobile {
+      width: 148px;
+      height: 130px;
+    }
+  }
+
+  &__title {
+    margin-top: 24px;
+    color: $color-primary;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-white;
+      text-shadow: 3px 1px 3.5px $color-primary;
+    }
+  }
+
+  &__price {
+    margin: 8px 0;
+    position: relative;
+
+    &--bold {
+      color: $color-primary;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 140%;
+    }
+
+    &--grey {
+      margin-left: 8px;
+      color: $color-secondary;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__stats {
+    margin: 8px 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    height: 100%;
+  }
+
+  &__stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    gap: 16px;
+
+    &--name {
+      color: $color-secondary;
+      font-weight: 600;
+    }
+
+    &--text {
+      text-align: right;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  @include onTablet {
+    width: 288px;
+  }
+}

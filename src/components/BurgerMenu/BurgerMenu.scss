@@ -1,0 +1,173 @@
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+
+  &__top {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid $color-elements 1px;
+  }
+
+  &__nav {
+    gap: 16px;
+  }
+
+  &__bottom {
+    position: fixed;
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    border-top: solid $color-elements 1px;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__left {
+    margin-left: 16px;
+  }
+
+  &__right {
+    cursor: pointer;
+  }
+
+  &__menu {
+    margin-top: 24px;
+  }
+}
+
+.burger-icon {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    height: 16px;
+  }
+
+  &__logo-img {
+
+    &--margins {
+      margin-top: 24px;
+
+      @media (max-width: 1199px) {
+        margin-top: 18px;
+      }
+    }
+
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    position: relative;
+
+    &--active {
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &--borders {
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: $color-elements;
+      }
+      &::before {
+        left: -1px;
+      }
+  
+      &::after {
+        right: -1px;
+      }
+    }
+   
+    &--invisible {
+      @media (max-width: 640px) {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 1200px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-elements;
+    }
+    &::before {
+      left: -1px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-elements;
+    }
+    &::before {
+      left: -1px;
+    }
+
+    @include onMobile {
+      display: flex;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+
+    &--active {
+      border-bottom: 2px solid $color-primary;
+    }
+
+    &--invisible {
+      @media (max-width: 640px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.button {
+  background-color: $color-accent;
+  display: flex;
+
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+
+  text-align: center;
+
+  font-family: 'Mont';
+  color: $color-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  transition: box-shadow 0.3s;
+
+  &--outlined {
+    background-color: $color-white;
+    color: $color-accent;
+    border: 1px solid $color-elements;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 13px 0px rgba(23, 32, 49, 0.4);
+  }
+}

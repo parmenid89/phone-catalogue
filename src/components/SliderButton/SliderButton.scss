@@ -1,0 +1,48 @@
+.page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-elements;
+  background-color: $color-white;
+  width: 32px;
+  height: 32px;
+  border-radius: 48px;
+  margin: 0 4px;
+  cursor: pointer;
+
+  &__logo {
+    display: flex;
+
+    path {
+      fill: $color-primary;
+    }
+  }
+
+  &:first-child {
+    margin-right: 12px;
+    border: 1px solid $color-icons;
+  }
+
+  &:last-child {
+    margin-left: 12px;
+    border: 1px solid $color-icons;
+  }
+
+  &:hover {
+    border: 1px solid $color-primary;
+  }
+
+  &:not(:first-child):not(:last-child).active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &.disabled {
+    border: 1px solid $color-elements;
+    pointer-events: none;
+  }
+
+  &.disabled path {
+    fill: $color-elements;
+  }
+}

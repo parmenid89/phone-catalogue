@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+.homepage {
+  grid-column: 1 / -1;
+  margin-top: 56px;
+  color: $color-primary;
+
+  &__blocktitle {
+    font-weight: 800;
+   
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    &-title {
+      font-size: 48px;
+
+      @include onMobile {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &__categories {
+    margin: 0 auto;
+
+    &-links {
+      display: grid;
+      gap: 16px;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      @include onTablet {
+        display: flex;
+      }
+      
+      @include onMobile {
+        flex-direction: column;
+      }
+    }
+  }
+}

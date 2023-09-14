@@ -1,0 +1,237 @@
+.header {
+  height: 64px;
+  background-color: $color-white;
+
+  @include onTablet {
+    height: 48px;
+  }
+
+  @include onMobile {
+    height: 48px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+
+  &__logo-img {
+    width: 80px;
+    height: 28px;
+
+    @include onMobile {
+      width: 64px;
+      height: 22px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    height: 100%;
+  
+    @include onMobile {
+      height: 100%;
+      margin-left: 16px;
+    }
+  
+    &--left {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-elements;
+  }
+}
+
+.nav {
+  height: 64px;
+  text-transform: uppercase;
+  margin-left: 24px;
+
+  @include onTablet {
+    height: 48px;
+  }
+
+  @include onMobile {
+    height: 48px;
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    gap: 64px;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    &--burger {
+      margin-top: 40px;
+    }
+
+    &--column {
+      flex-direction: column;
+    }
+
+    &--centered {
+      align-items: center;
+    }
+
+    @include onTablet {
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    color: $color-secondary;
+    display: flex;
+    line-height: 64px;
+    font-size: 12px;
+    font-weight: 800;
+    transition: color 0.3s;
+    
+    @include onTablet {
+      line-height: 48px;
+    }
+
+    &:hover {
+      color: $color-primary;;
+      text-decoration: none;
+    }
+  }
+
+  &__is-active {
+    position: relative;
+    color: $color-primary;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.icon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+ 
+  &__logo {
+    position: relative;
+    height: 16px;
+  }
+
+  &__left {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+
+    &--active {
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &--borders {
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: $color-elements;
+      }
+      &::before {
+        left: -1px;
+      }
+  
+      &::after {
+        right: -1px;
+      }
+    }
+
+    @include onTablet {
+      width: 48px;
+    }
+   
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-secondary;
+    }
+    &::before {
+      left: -1px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-elements;
+    }
+    &::before {
+      left: -1px;
+    }
+
+    @include onMobile {
+      display: flex;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+
+    &--active {
+      border-bottom: 2px solid $color-primary;
+    }
+
+    @include onTablet {
+      width: 48px;
+    }
+
+    &--burger {
+      margin-top: 13px;
+    }
+
+    @include onMobile {
+      display: none;
+    }
+  }
+}

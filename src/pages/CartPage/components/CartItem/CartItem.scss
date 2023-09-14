@@ -1,0 +1,109 @@
+.cart__item {
+  width: 100%;
+
+  padding: 32px 24px;
+  border-radius: 16px;
+  border: 1px solid $color-elements;
+
+  @include flex(row, center, center);
+  gap: 24px;
+
+  @include onMobile {
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 16px;
+  }
+
+  &-info {
+    width: 100%;
+    @include flex(row, center, flex-start);
+    gap: 24px;
+  }
+
+  &-img {
+    object-fit: contain;
+    display: block;
+    width: 66px;
+    height: 66px;
+  }
+
+  &-delete {
+    cursor: pointer;
+    opacity: 50%;
+    width: 16px;
+    height: 16px;
+
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+
+  &-total {
+    @include flex(row, center, flex-end);
+    gap: 54px;
+
+    @include onMobile {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &-btns {
+    @include flex(row, center, center);
+    gap: 13px;
+  }
+
+  &-number {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+
+  &-btn {
+    box-sizing: content-box;
+    min-width: 32px;
+    min-height: 32px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+
+    border: 1px solid $color-icons;
+    border-radius: 50%;
+    transition: border 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $color-primary;
+    }
+
+    &:disabled {
+      opacity: 50%;
+      cursor: default;
+      border: 1px solid $color-elements;
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  }
+
+  &-price {
+    color: $color-primary;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+  }
+}

@@ -1,0 +1,131 @@
+.footer {
+  height: 96px;
+  width: 100%;
+  background-color: $color-white;
+
+  @include onMobile {
+    height: 257px;
+  }
+
+  &__content {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    max-width: 1136px;
+
+    @include onMobile {
+      flex-direction: column;
+      gap: 32px;
+      align-items: flex-start;
+      max-width: 1136px;
+
+      & > :nth-child(3) {
+        align-self: center;
+      }
+    }
+
+    @include onTablet {
+      padding-inline: 24px;
+    }
+
+    @include onMobile {
+      padding-inline: 16px;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 379px;
+    }
+
+    &-link {
+      color: $color-secondary;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color-primary;
+        transition: 0.3s;
+      }
+    }
+
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+      
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        max-width: 288px;
+      }
+    }
+  }
+
+  &__button {
+    background-color: $color-white;
+    width: 118px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+    svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(-90deg);
+    }
+
+    &:hover > &__content {
+      color: $color-primary;
+    }
+
+    &:hover svg rect {
+      transition: 0.3s;
+      stroke: $color-primary;
+    }
+
+    &-content {
+      color: $color-secondary;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    &-icon {
+      width: 31px;
+      height: 31px;
+      border-color: black;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-elements;
+  }
+}
+
+.logo {
+  display: block;
+  width: 89px;
+  height: 32px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

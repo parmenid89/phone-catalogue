@@ -1,0 +1,109 @@
+.swiperPhones {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+
+  .swiper {
+    margin: 0;
+    margin-top: 24px;
+    width: 1136px;
+    position: relative;
+    overflow-y: visible;
+
+    &-slide {
+      height: auto;
+    }
+
+    &-button-prev {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: -36px;
+      left: 1040px;
+      background-color: $color-hover-bg;
+
+      &::after {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url('../../assets/icons/Arrow-button.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: rotate(-180deg);
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        background-image: url('../../assets/icons/Arrow-button-Hover.svg');
+      }
+    }
+
+    &-button-next {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: -36px;
+      right: 16px;
+      background-color: $color-hover-bg;
+
+      &::after {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url('../../assets/icons/Arrow-button.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        background-image: url('../../assets/icons/Arrow-button-Hover.svg');
+      }
+    }
+
+    @include onTablet {
+      & {
+        width: 592px;
+      }
+
+      &-button-prev {
+        left: 484px;
+      }
+
+      &-button-next {
+        right: 24px;
+      }
+    }
+
+    @include onMobile {
+      & {
+        width: 288px;
+        margin-top: 50px;
+      }
+
+      &-button-prev {
+        left: 30%;
+        top: -20px;
+      }
+
+      &-button-next {
+        right: 30%;
+        top: -20px;
+      }
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-family: Mont;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 41px;
+    letter-spacing: -0.32px;
+
+    @include onMobile {
+      text-align: center;
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}

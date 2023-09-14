@@ -1,0 +1,20 @@
+.counter {
+  position: absolute;
+  top: -50%;
+  right: -30%;
+
+  &__value {
+    position: absolute;
+
+    color:$color-white;
+    text-align: center;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 14%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+  }
+}
