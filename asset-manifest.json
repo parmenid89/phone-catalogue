@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/phone-catalogue-fe/static/css/main.e570cac2.css",
+    "main.js": "/phone-catalogue-fe/static/js/main.9c76f293.js",
+    "static/media/banner-phones.png": "/phone-catalogue-fe/static/media/banner-phones.b4eeda8bd82b712057a2.png",
+    "static/media/banner-tablets.png": "/phone-catalogue-fe/static/media/banner-tablets.a962057c1043a08f7737.png",
+    "static/media/Mont-Bold.eot": "/phone-catalogue-fe/static/media/Mont-Bold.8cbc302cbcaf01cbe245.eot",
+    "static/media/Mont-Regular.eot": "/phone-catalogue-fe/static/media/Mont-Regular.37c884fa90ad7debecef.eot",
+    "static/media/Mont-Bold.ttf": "/phone-catalogue-fe/static/media/Mont-Bold.96feac9bbfbf9cd60af7.ttf",
+    "static/media/Mont-Regular.ttf": "/phone-catalogue-fe/static/media/Mont-Regular.b98fc1cb281f6fa7b4c7.ttf",
+    "static/media/Mont-SemiBold.eot": "/phone-catalogue-fe/static/media/Mont-SemiBold.40c58f6679e06c30b7f6.eot",
+    "static/media/Mont-SemiBold.ttf": "/phone-catalogue-fe/static/media/Mont-SemiBold.eb4ec46caeb3d818c818.ttf",
+    "static/media/category-accessories.png": "/phone-catalogue-fe/static/media/category-accessories.ca41c40df628caa719e1.png",
+    "static/media/category-tablets.png": "/phone-catalogue-fe/static/media/category-tablets.8925e5a0ce876216fdf8.png",
+    "static/media/Mont-SemiBold.woff": "/phone-catalogue-fe/static/media/Mont-SemiBold.54c461f1a4f80aea080c.woff",
+    "static/media/Mont-Regular.woff": "/phone-catalogue-fe/static/media/Mont-Regular.db22fbf6fd85f9648cd0.woff",
+    "static/media/Mont-Bold.woff": "/phone-catalogue-fe/static/media/Mont-Bold.562beef0913bb220a2f1.woff",
+    "static/media/category-phones.png": "/phone-catalogue-fe/static/media/category-phones.a2839732f77f63e38be3.png",
+    "static/media/banner-accessories.png": "/phone-catalogue-fe/static/media/banner-accessories.bdd2e0fca0159e52f41c.png",
+    "static/media/Mont-SemiBold.woff2": "/phone-catalogue-fe/static/media/Mont-SemiBold.8149a7bf48c364d07dd9.woff2",
+    "static/media/Mont-Regular.woff2": "/phone-catalogue-fe/static/media/Mont-Regular.6a5019e626fedb9a332b.woff2",
+    "static/media/Mont-Bold.woff2": "/phone-catalogue-fe/static/media/Mont-Bold.3e8bc65b088b2a041830.woff2",
+    "static/media/Logo.png": "/phone-catalogue-fe/static/media/Logo.f1a93e09718d393bdc52.png",
+    "static/media/Shopping-cart.svg": "/phone-catalogue-fe/static/media/Shopping-cart.df23e4fbb25ff3701b16978082a61721.svg",
+    "static/media/Favourites.svg": "/phone-catalogue-fe/static/media/Favourites.cc696932b63c19f487763e75a935dfcb.svg",
+    "static/media/Home.svg": "/phone-catalogue-fe/static/media/Home.9a24a70540404ccecd05fd9f900ddeeb.svg",
+    "static/media/Favourites-filled.svg": "/phone-catalogue-fe/static/media/Favourites-filled.197c85893972fd26ee86af2ee3df0aca.svg",
+    "static/media/Close.svg": "/phone-catalogue-fe/static/media/Close.cdfb6ae506fe360c9ad495bfc61f521d.svg",
+    "static/media/Burger-menu.svg": "/phone-catalogue-fe/static/media/Burger-menu.73ddde2c093f9fb313b993eaba038f9a.svg",
+    "static/media/Plus.svg": "/phone-catalogue-fe/static/media/Plus.d886cbead86167dad78ed7d08416c466.svg",
+    "index.html": "/phone-catalogue-fe/index.html",
+    "static/media/Arrow-button.svg": "/phone-catalogue-fe/static/media/Arrow-button.f3c59a92858cf97ebaae.svg",
+    "static/media/Arrow-button-Hover.svg": "/phone-catalogue-fe/static/media/Arrow-button-Hover.4132e7acd513d491a10e.svg",
+    "static/media/Arrow-left.svg": "/phone-catalogue-fe/static/media/Arrow-left.3ba65ddf1ac29f47e37d87cca4eb4969.svg",
+    "static/media/Minus.svg": "/phone-catalogue-fe/static/media/Minus.6147cb5db4c975f91de08b377dc8a814.svg",
+    "main.e570cac2.css.map": "/phone-catalogue-fe/static/css/main.e570cac2.css.map",
+    "main.9c76f293.js.map": "/phone-catalogue-fe/static/js/main.9c76f293.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e570cac2.css",
+    "static/js/main.9c76f293.js"
+  ]
+}
